@@ -1,0 +1,451 @@
+section#section_product_top {
+  /*background: url(../images/background-hexagons-b-1x.png) no-repeat right top;*/
+}
+section#section_product_bottom {
+  padding: 40px 0 0 0;
+}
+section#section_product_bottom .block {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* product */
+#product-page {
+  padding-top: 140px;
+}
+#product-page p#category {
+	color: #000;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+#product-page h1#name {
+  color: #000;
+	font-family: Montserrat;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 39px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+#product-page div#intro-text {
+	color: #556274;
+	font-family: "Open Sans";
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 30px;
+  margin-bottom: 20px;
+}
+#product-page div#intro-text p {
+  margin: 0;
+}
+
+.termDesc h2{
+	font-family: Montserrat;
+	color:#212529;	
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.termDesc p{
+	color: #556274;	
+	font-family: "Open Sans";	
+	font-size: 15px;	
+	font-style: italic;	
+	font-weight: 600;	
+	line-height: 25px;}
+}
+
+
+.product_data , .supply_period {
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #CFD4DD;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    color: #000000 !important;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.price-comment {
+  display: flex;
+}
+
+.price-comment div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.price-comment div.starRating {
+  margin-top: 7px;
+}
+
+.label-price {
+    color:#212529;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+#product-page div#comment {
+	color: #7C8A9F;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 600;
+}
+#product-page div#comment i {
+  color: #CCCCCC;
+  margin-right: 10px;
+}
+
+#form-wrapper label {
+ color: #7C8A9F;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 17px;
+}
+
+#product-page a#buy-now {
+  display: block;
+	border-radius: 4px;
+  background: linear-gradient(180deg, #006699 0%, #535461 100%);
+  color: #FFFFFF;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 54px;
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* carousel */
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+    background-color: transparent;
+    opacity: 1 !important;
+    width: 20% !important;
+}
+.carousel-item {
+  text-align: center;
+}
+.carousel-indicators-wrapper {
+  height: 110px;
+}
+.carousel-indicators {
+  bottom: unset !important;
+  margin: 20px 0 0 0;
+}
+
+
+/* reviews */
+#reviews {
+  margin-top: 40px;
+}
+#reviews h4.title {
+	color: #191B24;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 29px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+#reviews p.intro {
+  color: #556274;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+}
+#reviews .items {
+  border-top: 2px solid #E0E0E7;
+  margin: 40px 0;
+}
+#reviews .items .item {
+  border-bottom: 2px solid #E0E0E7;
+  padding: 30px 0;
+}
+#reviews .items .item .customer {
+	color: #434451;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+  padding-right: 20px;
+}
+#reviews .items .item i {
+	color: #FFE255;
+}
+#reviews .items .item .comment {
+	color: #556274;
+	font-family: "Open Sans";
+	font-size: 16px;
+	line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* comment form */
+#add_comment {
+  padding: 20px 0;
+}
+#add_comment h2.title {
+	color: #191B24;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 29px;
+  margin-bottom: 20px;
+}
+#add_comment p.desc {
+	color: #556274;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+  margin-bottom: 40px;
+}
+#add_comment .starRating label.rate {
+	color: #006699;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 500;
+  float: left;
+  display: inline-block;
+	line-height: 24px;
+  margin-right: 15px;
+}
+#add_comment form {
+  padding: 40px 0;
+}
+#add_comment .starRating form {
+  display: inline-block;
+  padding: 0;
+}
+#add_comment form input.form-control {
+  opacity: 0.5;
+	color: #556274;
+	font-family: "Open Sans";
+	font-size: 16px;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid #E0E0E7;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+}
+#add_comment form textarea {
+  opacity: 0.5;
+	color: #556274;
+	font-family: "Open Sans";
+	font-size: 16px;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid #E0E0E7;
+  margin: 20px 0 50px 0;
+  padding: 5px 0;
+}
+#add_comment form button {
+	height: 59px;
+  border: 0;
+	border-radius: 4px;
+	background-color: #006699;
+  color: #FFFFFF;
+	font-family: Montserrat;
+	font-size: 15px;
+	font-weight: 600;
+  padding: 0 30px;
+	text-transform: uppercase;
+}
+#add_comment form button:hover {
+  text-decoration: underline;
+}
+
+/* star */
+input.star { display: none; }
+label.star {
+  float: right;
+  margin-right: 3px;
+  font-size: 16px;
+  color: #FFE255;
+}
+input.star:checked ~ label.star:before {
+  font-family: "Font Awesome 5 Pro"; 
+  font-weight: 900; 
+  content: "\f005";
+  color: #FFE255;
+}
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+}
+input.star-1:checked ~ label.star:before { color: #F62; }
+label.star:before {
+  font-family: "Font Awesome 5 Pro"; 
+  font-weight: 100; 
+  content: "\f005";
+  padding-top: 30px;
+}
+
+
+@media (max-width: 375px) {
+
+  #buy-now,
+  #add_comment form button {
+    width: 100% !important;
+  }
+  
+  #block-18 .block-body img {
+    margin-right: 5px !important;
+    width: unset !important;
+  }
+  
+}
+
+.product_data_none {
+    display: none;
+}
+
+.label-price-over{
+    text-decoration: line-through;
+	 color:#212529;
+}
+
+.label-price-discout{
+   margin-left:5px;
+}
+
+.limited-time-offer {	
+	background:#DA2321;
+	color:#FFF;
+	margin-top: 62px;
+	padding-top: 10px;
+	height: 40px;	
+    	z-index: 20;
+}
+
+.limited-time-offer-upsell {	
+	background:#DA2321;
+	color:#FFF;
+	height: 40px;	
+    z-index: 20;
+	font-family: Montserrat;
+}
+
+.limited-time-offer-upsell p{	
+	padding:10px;
+}
+
+
+.anchor_links {
+	border-top: 1px solid #CFD4DD;
+}
+
+.anchor_links ul {
+ list-style-type:none;
+  padding: 20px 5px;
+ color: #006699;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#product-page  .p-icons p {
+	color: #006699;	
+	font-family: Montserrat;	
+	font-size: 14px;	
+	font-weight: 600;	
+	line-height: 18px;	
+	text-align: center;
+	margin-top: 10px;
+}
+
+#product-page  .p-icons img {
+	max-width: 65px;
+}
+
+.buy_upsell {
+    display: block;
+    border-radius: 4px;
+  background: linear-gradient(180deg, #006699 0%, #535461 100%);
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 54px;
+    text-align: center;
+    text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.price-comment .rating i {
+    color: #FFE255;
+    font-size: 16px;
+}
+
+.product_name {
+	font-family: Montserrat;
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+
+
+.trapezoid {
+    position: absolute;
+    top: -16%;
+    left: 45%;
+    right: 0;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 60px;
+    max-height: 53px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.trapezoid:before,
+.trapezoid:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-transform-origin: 20% 100%;
+    -ms-transform-origin: 20% 100%;
+    transform-origin: 20% 100%;
+}
+.trapezoid:before {
+    -webkit-transform: skewX(18.8deg);
+    background: #DA2321;
+}
+.trapezoid:after {
+    -webkit-transform: skewX(-18.8deg);
+    transform: skewX(-18.8deg);
+    background: #DA2321;
+}
+
+
+.trapezoid span {
+	color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}

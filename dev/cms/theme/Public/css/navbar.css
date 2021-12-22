@@ -1,0 +1,62 @@
+nav.navbar {
+  -webkit-box-shadow: 0 8px 6px -6px #CCC;
+  -moz-box-shadow: 0 8px 6px -6px #CCC;
+  box-shadow: 0 8px 6px -6px #CCC;
+  background-color: #ffffff;
+}
+.navbar_bg {
+	background-color:#999999 !important;
+}
+.navbar_allbg {
+	background-color:#999999 !important;
+}
+body.home nav.navbar {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+nav.navbar .menu-block {
+    margin-left: auto !important;
+}
+nav.navbar .menu-block ul#top-menu li {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+nav.navbar .menu-block ul#top-menu {
+	text-align: right;
+}
+nav.navbar .menu-block ul#top-menu li a {
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+}
+body.home nav.navbar .menu-block ul#top-menu li a {
+  color: #fff;
+}
+nav.navbar .navbar-toggler {
+  border: 0;
+  padding: 0;
+}
+nav.navbar .menu-block ul#top-menu li a.cart {
+  background: url(../images/cart-icon-1x.png) no-repeat 0 50%;
+  margin-left: 10px;
+  padding-left: 25px;
+}
+
+.logo-img {
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+
+@media (max-width: 992px) {
+
+  nav.navbar .menu-block ul#top-menu li a.cart {
+    margin-left: 0 !important;
+  }  
+
+}
+

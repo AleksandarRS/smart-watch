@@ -1,0 +1,104 @@
+/* ---------------------------------------------------
+    SIDEBAR STYLE CATEGORY
+----------------------------------------------------- */
+
+#sidebar_cat {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100vh;
+    z-index: 9999;
+    background: #0a0a0a;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar_cat.active {
+    left: 0;
+}
+
+#dismiss_cat {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #0a0a0a;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss_cat:hover {
+    background: #fff;
+    color: #0a0a0a;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar_cat .sidebar-header {
+    padding: 20px;
+    background: #1f1f1f;
+}
+
+#sidebar_cat ul.components {
+    padding: 20px 0;
+}
+
+#sidebar_cat ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar_cat ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar_cat ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar_cat ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #1f1f1f;
+}
+
+#sidebar_cat ul li a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+	color: #fff;
+}
+#sidebar_cat ul ul a {
+    background: #1f1f1f;
+}
+
+.btn--search {
+
+}
+
+.btn-search-side {
+
+}

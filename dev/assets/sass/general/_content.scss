@@ -1,0 +1,13 @@
+.container {
+    max-width: $container-width;
+}
+
+.align--center {
+    align-items: center;
+}
+
+.white-content {
+    * { 
+        color: $white;
+    }
+}

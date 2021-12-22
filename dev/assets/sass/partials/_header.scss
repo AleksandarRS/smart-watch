@@ -1,0 +1,64 @@
+.site-header {
+    background-color: $dark-400;
+    left: 0;
+    padding: 22px 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all .5s;
+    width: 100%;
+    z-index: 999;
+    &.header-animated {
+        padding: 10px 15px;
+        .main-header-menu {
+            a {
+                font-size: $font-size-base;
+                @include max-mq ($md) {
+                    font-size: $font-size-base - 0.25;
+                }
+                @include max-mq ($mb) {
+                    font-size: $font-size-base - 0.45;
+                }
+            }
+        }
+    }
+    .main-header-menu {
+        text-align: center;
+        margin-bottom: 0;
+        .menu-item {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 20px;
+            @include min-mq ($fhd - 20) {
+                margin: 0 50px;
+            }
+            @include max-mq ($ip) {
+                margin: 0 15px;
+            }
+            @include max-mq ($ip - 20) {
+                margin: 0 10px;
+            }
+            @include max-mq ($xs) {
+                margin: 0 5px;
+            }
+        }
+        a {
+            font-size: $font-size-large;
+            font-weight: $font-weight-m;
+            color: $white;
+            transition: all .5s;
+            @include max-mq ($md) {
+                font-size: $font-size-base;
+            }
+            @include max-mq ($mb) {
+                font-size: $font-size-base - 0.25;
+            }
+            @include max-mq ($xs) {
+                font-size: $font-size-base - 0.35;
+            }
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}

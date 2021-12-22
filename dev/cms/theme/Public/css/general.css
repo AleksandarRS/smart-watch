@@ -1,0 +1,278 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 24px;
+}
+
+body.full-page {
+    overflow: hidden !important;
+}
+
+h1 {
+  color: #191B24;
+  font-family: 'Montserrat';
+  font-size: 44px;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* contextual menu */
+a.add_block {
+  color: red;
+  font-size: 18px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 9999;
+}
+a.add_block:hover {
+  color: red;
+}
+
+.block-body,
+.menu-block {
+  position: relative;
+}
+.contextual-links-wrapper {
+  position: absolute;
+  right: 5px;
+  z-index: 100;
+}
+a.contextual-links-trigger {
+  background-color: unset !important;
+  color: #3455C1 !important;
+  font-size: 16px !important;
+  line-height: unset !important;
+  margin: unset !important;
+  height: unset !important;
+  width: unset !important;
+}
+.contextual-links-wrapper ul.contextual-links {
+  background-color: #ffffff;
+  margin: 0 !important;
+  position: absolute;
+  padding: 0;
+  right: 0;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contextual-links-wrapper ul.contextual-links li {
+  background: none !important;
+  font-weight: 100 !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 5px 10px !important;
+}
+.contextual-links-wrapper ul.contextual-links li a {
+  background: unset !important;
+  color: #3455C1 !important;
+  font-size: 14px !important;
+  font-weight: 100 !important;
+  line-height: 26px !important;
+  margin: 0 !important;
+  text-align: left !important;
+  text-transform: uppercase !important;
+  height: unset!important;
+  width: unset !important;
+  font-family: 'Open Sans' !important;
+}
+
+/* blocks */
+section#section_content .block {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+section .block h2 {
+  margin-bottom: 30px !important;
+  color: #394557;
+  font-family: Montserrat;
+  font-size: 44px !important;
+  font-weight: 600 !important;
+  line-height: 54px !important;
+}
+section .block h6 {
+  color: #3455C1;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 600;
+}
+
+section .block .block-body {
+  color: #394557;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+section .block .block-body .rating i {
+  color: #FFE255;
+  font-size: 16px;
+}
+
+section .block .block-body ul:not(.contextual-links) {
+  padding: 0;
+  color: #3455C1;
+  list-style: none;
+}
+section .block .block-body ul:not(.contextual-links) li {
+  color: #3455C1;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  list-style: none;
+  margin: 25px 0;
+  padding: 5px 0 5px 40px;
+  background: url(../images/checkmark-1x.png) no-repeat 0 50%;
+}
+section .block .block-body a {
+  color: #ffffff;
+  display: block;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 164px;
+  border-radius: 4px;
+  background-color: #3455C1;
+}
+
+#btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	z-index: 999;
+}
+#btn-back-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#btn-back-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#btn-back-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+.loading_m {
+    display:    none;
+    position:   fixed;
+    z-index:    100000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .9 ) 
+                url('../img/processing.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .loading_m {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .loading_m {
+    display: block;
+}
+
+.overlay_p {
+   left: 0px!important;
+   top: 0px!important;
+   right: 0px!important;
+   bottom: 0px!important;
+}
+.error-message {
+	color: red;
+    font-size: 12px;
+    margin-top: -4px;
+    margin-left: 2px;
+    margin-bottom: -4px;
+}
+
+
+.video-bg .promo-container{
+    position: absolute;
+	top: 30%;
+	left: 50%;
+	margin: -100px 0 0 -150px;
+}
+
+.video-bg .promo-container .promo{
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+  
+  .block .block-body img {
+    height: auto !important;
+  }
+
+  .video-bg .promo-container{
+    position: absolute;
+	bottom: 10%;
+	left: 50%;
+    margin: -50px 0 0 -150px;
+}
+
+}
+
+
+
+.item-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+		
+.item-video iframe,
+.item-video object,
+.item-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

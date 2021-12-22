@@ -1,0 +1,97 @@
+.site-footer {
+    background-color: $dark-500;
+    padding-top: 61px;
+    * {
+        font-family: $secondary-font;
+    }
+    .widget-wrapper {
+        padding-bottom: 44px;
+        @include max-mq ($ip - 20) {
+            padding-bottom: 30px;
+        }
+    }
+    .widget-text-content {
+        p {
+            opacity: 0.5;
+            line-height: 1.6;
+        }
+    }
+    aside {
+        padding-bottom: 5px;
+    }
+    .widget-menu-item {
+        a {
+            font-size: $font-size-base;
+            font-weight: $font-weight-sb;
+            opacity: 0.8;
+            text-transform: uppercase;
+            @include max-mq ($tab + 20) {
+                font-size: $font-size-base - 0.2;
+            }
+            @include max-mq ($ip) {
+                font-size: $font-size-base - 0.4;
+            }
+        }
+    }
+    .widget-nav-menu-content {
+        @include max-mq ($tab + 20) {
+            padding-top: 25px;
+        }
+        @include max-mq ($ip - 20) {
+            padding-top: 7px;
+        }
+    }
+    .privacy-policy-list {
+        .widget-menu-item {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            padding-left: 15px;
+            padding-right: 15px;
+            @include max-mq ($mbl) {
+                width: 48%;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            @include max-mq ($ip - 20) {
+                width: 100%;
+                padding-bottom: 7px;
+                padding-top: 7px;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                height: 20px;
+                width: 1px;
+                background-color: $white;
+                @include max-mq ($ip - 20) {
+                    display: none;
+                }
+            }
+            &:nth-child(even) {
+                &:after {
+                    @include max-mq ($mbl) {
+                        display: none;
+                    }
+                }
+            }
+            &:last-of-type {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .site-info {
+        background-color: $dark-600;
+        padding: 15px 15px;
+        p {
+            margin: 0;
+            opacity: 0.5;
+        }
+    }
+}

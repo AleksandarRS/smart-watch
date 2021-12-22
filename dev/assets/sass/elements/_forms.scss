@@ -1,0 +1,152 @@
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+.form-control,
+textarea {
+  background-color: $white;
+  border-radius: 0;
+  border: 1px solid $white;
+  color: $grey-300;
+  font-size: $font-size-small !important;
+  height: 44px !important;
+  letter-spacing: 1.2px;
+  line-height: 1em;
+  margin-bottom: 37px;
+  padding: 5px 20px;
+  vertical-align: middle;
+}
+
+select {
+  border: 1px solid $grey-300;
+  border-radius: 0;
+  height: 44px !important;
+}
+
+textarea {
+  resize: none;
+  padding-left: .6em;
+  width: 100%;
+  height: auto !important;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  border: 1px solid $grey-300;
+  border-radius: 0;
+  font-family: $primary-font;
+  font-size: $font-size-base;
+  line-height: 1.15em;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.btn.btn-lg {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  border-radius: 0;
+  display: block;
+  font-size: $font-size-large;
+  font-weight: $font-weight-b;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .5s;
+  width: auto;
+  @include max-mq ($md) {
+    font-size: $font-size-large - 0.25;
+  }
+  @include max-mq ($mbl) {
+      font-size: $font-size-large - 0.4;
+  }
+  @include max-mq ($mbl) {
+      font-size: $font-size-large - 0.5;
+  }
+  &:hover {
+    background-color: $tertiary-color;
+    border-color: $tertiary-color;
+  }
+  .lp-form-wrapper & {
+    margin-top: 0;
+    padding: 0.65rem 3.2rem;
+    width: 100%;
+  }
+}
+
+select.form-control {
+  appearance: auto;
+  color: $primary-color;
+  option {
+    color: $grey-400;
+  }
+}
+
+
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show > .btn-primary.dropdown-toggle {
+    background-color: $secondary-color;
+}
+
+
+/*---- Placeholder ----*/
+::-webkit-input-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+\:-moz-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+::-moz-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+\:-ms-input-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+*::-webkit-input-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+*:-moz-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+*:-ms-input-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+
+fieldset {
+    min-width: 0;
+}

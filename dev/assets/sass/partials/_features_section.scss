@@ -1,0 +1,94 @@
+.features-section-wrapper {
+    .features-details-element {
+        background-color: $tertiary-color;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .features-heading-details {
+            padding: 150px 15px 200px;
+            @include min-mq ($mac + 20) {
+                padding: 233px 15px 298px;
+            }
+            @include max-mq ($ls) {
+                padding: 100px 15px 120px;
+            }
+            @include max-mq ($md) {
+                padding: 80px 15px 50px;
+            }
+            @include max-mq ($tab) {
+                padding: 60px 0 40px;
+            }
+        }
+        .entry-header {
+            padding-bottom: 31px;
+            @include max-mq ($tab) {
+                padding-bottom: 0;
+            }
+        }
+        .features-items-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            @extend %content-centered;
+            @include min-mq ($mac + 20) {
+                max-width: 93%;
+            }
+            @include max-mq ($tab) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .features-item {
+                flex: 0 0 33.33334%;
+                margin-top: 15px;
+                max-width: 33.33334%;
+                padding-bottom: 18px;
+                padding-left: 3px;
+                padding-right: 3px;
+                padding-top: 62px;
+                @include max-mq ($ls) {
+                    padding-top: 32px;
+                }
+                &:nth-child(4),
+                &:nth-child(5) {
+                    flex: 0 0 45%;
+                    max-width: 45%;
+    
+                }
+
+            }
+            .feature-icon {
+                margin-top: 35px;
+            }
+        }
+    }
+    .features-order-now-cta {
+        align-items: flex-end;
+        background-color: $tertiary-color-100;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        @include max-mq ($sm) {
+            min-height: 635px;
+        }
+        @include max-mq ($mbl) {
+            min-height: 450px;
+        }
+        @include max-mq ($mbs) {
+            min-height: 425px;
+        }
+        @include max-mq ($ip - 20) {
+            min-height: 365px;
+        }
+        .cta-order-now-button {
+            margin-bottom: 60px;
+            @include min-mq ($mac) {
+                margin-bottom: 105px;
+            }
+            @include max-mq ($ip - 20) {
+                margin-bottom: 34px;
+            }
+        }
+    }
+}

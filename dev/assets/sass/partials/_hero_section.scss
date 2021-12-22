@@ -1,0 +1,152 @@
+// #hero-section-banner {
+//     &.activate-banner {
+//         .video-banner-animation-cta {
+//             top: 0;
+//         }
+//     }
+// }
+.home-hero {
+    background-color: $dark-400;
+    overflow: hidden;
+    padding-top: 78px;
+    position: relative;
+    @include max-mq ($md) {
+        padding-top: 68px;
+    }
+    @include min-mq ($lt) {
+        height: 100vh;
+    }
+    @extend %after-clear;
+    &:after {
+        background-color: $grey-400;
+        z-index: 1;
+        opacity: 0.5;
+        top: 78px;
+        @include max-mq ($md) {
+            top: 68px;
+        }
+    }
+    &.heigh {
+        min-height: 340px;
+        height: 64vw;
+        max-height: 1324px;
+        @include min-mq ($fhd + 150) {
+            height: 78vw;
+            max-height: 1514px;
+        }
+        @include max-mq ($md) {
+            min-height: 270px;
+        }
+    }
+    .vimeo-iframe {
+        transform: translateY(0) scale(1.15);
+        transform-origin: center;
+        @include min-mq ($fhd + 20) {
+            transform: translateY(0) scale(1.4);
+        }
+    }
+    .video-banner-animation-cta {
+        bottom: 0;
+        height: 100%;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        transition: all 1.1s;
+        // top: -200%;
+    }
+    .video-banner-animation-cta-container {
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+    .video-banner-heading-button-wrap {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        position: relative;
+        width: 100%;
+        @include max-mq ($sm) {
+            max-width: 100%;
+        }
+        &:after {
+            opacity: 0.9;
+        }
+        .entry-content {
+            font-size: $font-size-h3 - 0.5;
+            padding-top: 4px;
+            @include max-mq ($mac) {
+                font-size: $font-size-h3 - 0.7;
+            }
+            @include max-mq ($ipad) {
+                font-size: $font-size-h3 - 1.1;
+            }
+            @include max-mq ($mbl) {
+                font-size: $font-size-h3 - 1.5;
+            }
+            @include max-mq ($mb) {
+                display: none;
+            }
+        }
+    }
+    .vide-banner-heading-button-inner {
+        padding: 0 35px;
+        @include min-mq ($mac) {
+            padding: 0 92px;
+        }
+        @include max-mq ($ip - 20) {
+            padding: 0 20px;
+        }
+    }
+    .hero-banner-button {
+        padding-top: 55px;
+        @include max-mq ($ls) {
+            padding-top: 25px;
+        }
+        @include max-mq ($mbl) {
+            padding-top: 15px;
+        }
+        @include max-mq ($xs + 50px) {
+            padding-top: 5px;
+        }
+    }
+    .home-hero-media-wrap {
+        align-items: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        max-width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 78px;
+        width: 100%;
+        z-index: 1;
+        @include max-mq ($md) {
+            top: 68px;
+        }
+        img,
+        iframe,
+        video {
+            position: relative;
+            width: 100%;
+            min-width: 1400px;
+            min-height: 640px;
+            @include max-mq ($md) {
+                min-width: 420px;
+                min-height: 270px;
+            }
+        }
+    }
+}

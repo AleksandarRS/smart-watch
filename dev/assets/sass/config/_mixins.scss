@@ -1,0 +1,37 @@
+@mixin transition-all($property: all, $duration: .3s, $ease: ease, $delay: 0s){
+	-webkit-transition: $property $duration $ease $delay;
+	-moz-transition: $property $duration $ease $delay;
+	-o-transition: $property $duration $ease $delay;
+	transition: $property $duration $ease $delay;
+}
+
+@mixin user-select ($val: none)  {
+	-webkit-touch-callout: $val; // iOS Safari
+    -webkit-user-select: $val;   // Safari
+    -moz-user-select: $val;   	 // Old versions of Firefox
+    -ms-user-select: $val;   	 // Internet Explorer/Edge
+    user-select: $val;   	     // Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox
+}
+
+@mixin min-mq($var) {
+  @media (min-width: #{$var}) {
+    @content;
+  }
+}
+
+@mixin max-mq($var) {
+  @media (max-width: #{$var}) {
+    @content;
+  }
+}
+
+@mixin min-max-mq($min, $max) {
+  @media (min-width: #{$min}) and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+@mixin use-font($family, $weight) {
+  font-family: $family;
+  font-weight: $weight;
+}

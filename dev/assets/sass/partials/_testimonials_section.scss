@@ -1,0 +1,81 @@
+.testimonials-section-wrapper {
+    background-color: $dark-300;
+    padding-bottom: 43px;
+    padding-top: 80px;
+    @include min-mq ($mac + 20) {
+        padding-top: 135px;
+        padding-bottom: 58px;
+    }
+    @include max-mq ($mb) {
+        padding-bottom: 38px;
+        padding-top: 65px;
+    }
+    @include max-mq ($ip) {
+        padding-bottom: 30px;
+        padding-top: 40px;
+    }
+    .entry-header {
+        padding-bottom: 45px;
+    }
+    .testimonials-slider-item {
+        background-color: $dark-200;
+        padding: 63px 35px 47px;
+        @include max-mq ($mbs) {
+            padding: 28px 5px 35px;
+        }
+    }
+    .testimonials-slider-item-inner {
+        display: flex;
+        max-width: 100%;
+        @extend %content-centered;
+        @include min-mq ($mac) {
+            max-width: 83%;
+        }
+        @include max-mq ($mbl) {
+            display: block;
+        }
+        .testimonial-author-image {
+            max-width: 161px;
+            flex: 0 0 161px;
+            padding-top: 17px;
+            @include max-mq ($mbl) {
+                max-width: 100%;
+                flex: 0 0 100%;
+                padding-bottom: 35px;
+                padding-top: 0;
+            }
+            img {
+                border-radius: 50%;
+                display: block;
+                width: 100%;
+                @include max-mq ($mbl) {
+                    max-width: 161px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+        .testimonial-author-name-position-content {
+            padding-left: 55px;
+            @include max-mq ($mbl) {
+                padding-left: 0;
+            }
+            * {
+                color: $white;
+                font-family: $secondary-font;
+            }
+        }
+    }
+    .testimonial-author-name {
+        p {
+            margin-bottom: 0.4em;
+        }
+    }
+    .testimonial-author-position {
+        opacity: 0.8;
+    }
+    .testimonial-content {
+        padding-top: 30px;
+        opacity: 0.85;
+    }
+}

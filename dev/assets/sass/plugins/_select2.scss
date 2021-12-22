@@ -1,0 +1,50 @@
+.lp-form-wrapper {
+    > form {
+        > div {
+            > .select2 {
+                display: none;
+            }
+        }
+    }
+}
+.select2-container {
+    margin-bottom: 37px;
+    .select2-selection--single {
+        height: 44px;
+    }
+}
+.select2-container--default {
+    .select2-results__option--highlighted {
+        &.select2-results__option--selectable {
+            background-color: $tertiary-color;
+        }
+    }
+    .select2-selection--single {
+        background-color: $white;
+        border-radius: 0;
+        border: 1px solid $white;
+        .select2-selection__rendered {
+            color: $grey-300;
+            height: 44px;
+            letter-spacing: 1.2px;
+            line-height: 44px;
+            padding-left: 20px;
+        }
+        .select2-selection__arrow {
+            height: 44px;
+            top: 0;
+            right: 0;
+            width: 30px;
+        }
+    }
+}
+.select2-results {
+    ul {
+        li {
+            &:before {
+                display: none;
+                content: '';
+            }
+        }
+    }
+}

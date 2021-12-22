@@ -1,0 +1,62 @@
+%left-calc {
+    padding-left: calc(50vw - ( #{$container-width} / 2 ) + 10px);
+    width: 100%;
+    @include max-mq ($ls + 10) {
+        padding-left: 15px;
+    }
+}
+%right-calc {
+    padding-right: calc(50vw - ( #{$container-width} / 2 ) + 5px);
+    width: 100%;
+    @include max-mq ($ls + 10) {
+        padding-right: 15px;
+    }
+}
+
+%content-centered {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+%main-gradient {
+    background: $secondary-color;
+    background: -moz-linear-gradient(to bottom right, $secondary-color 0%, $tertiary-color 100%);
+    background: -webkit-linear-gradient(to bottom right, $secondary-color 0%, $tertiary-color 100%);
+    background: linear-gradient(to bottom right, $secondary-color 0%, $tertiary-color 100%);
+}
+
+%after-gradient-light {
+    background: $secondary-color;
+    background: -moz-linear-gradient(to bottom right, $secondary-color 0%, $tertiary-color 100%);
+    background: -webkit-linear-gradient(to bottom right, $secondary-color 0%, $tertiary-color 100%);
+    background: linear-gradient(to bottom right, $secondary-color 0%, $tertiary-color 100%);
+    bottom: 0;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0.27;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+%after-clear {
+    &:after {
+        bottom: 0;
+        content: '';
+        height: 100%;
+        left: 0;
+        opacity: 0.5;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+}
+

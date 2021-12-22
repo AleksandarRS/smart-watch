@@ -1,0 +1,150 @@
+.button {
+    border: 1px solid;
+    border-radius: 0;
+    display: inline-block;
+    font-size: $font-size-base;
+    font-weight: $font-weight-b;
+    padding: 15px 39px;
+    transition: all .5s;
+    vertical-align: middle;
+    text-transform: uppercase;
+    &.button-large {
+        font-size: $font-size-large-button;
+        padding: 32px 75px;
+        @include max-mq ($ls) {
+            font-size: $font-size-large-button - 0.4;
+            padding: 25px 45px;
+        }
+        @include max-mq ($md) {
+            font-size: $font-size-large-button - 0.7;
+            padding: 18px 42px;
+        }
+        @include max-mq ($mbl) {
+            font-size: $font-size-large-button - 0.9;
+            padding: 17px 40px;
+        }
+        @include max-mq ($mbl) {
+            font-size: $font-size-large-button - 1.2;
+            padding: 16px 39px;
+        }
+    }
+    &.button-arrow-right {
+        i, 
+        svg {
+            display: inline-block;
+            margin-left: 5px;
+            position: relative;
+            vertical-align: middle;
+        }
+    }
+    &.button-white {
+        background-color: $white;
+        border-color: $white;
+        color: $primary-color;
+        span {
+            color: $primary-color;
+            transition: color .5s;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        svg {
+            path {
+                transition: all .5s;
+            }
+        }
+        &:hover {
+            background-color: $primary-color;
+            border-color: $primary-color;
+            color: $white;
+            span {
+                color: $white;
+            }
+            svg {
+                path {
+                    fill: $white;
+                }
+            }
+        }
+    }
+    &.button-primary {
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+        color: $white;
+        &:hover {
+            background-color: $white;
+            color: $primary-color;
+        }
+    }
+    &.button-secondary {
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+        color: $white;
+        span {
+            color: $white;
+        }
+        &:hover {
+            background-color: $white;
+            color: $secondary-color;
+            span {
+                color: $secondary-color;
+            }
+            svg {
+                path {
+                    fill: $secondary-color;
+                }
+            }
+        }
+    }
+    &.button-transparent {
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+        span {
+            color: $white;
+        }
+        &:hover {
+            background-color: $white;
+            color: $secondary-color;
+            span {
+                color: $secondary-color;
+            }
+            svg {
+                path {
+                    fill: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    .btn {
+        &.btn-primary {
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+            color: $white;
+            border: 1px solid;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: $font-size-base;
+            font-weight: $font-weight-m;
+            padding: 15px 39px;
+            transition: all .5s;
+            span {
+                color: $white;
+            }
+            &:hover {
+                background-color: $white;
+                color: $secondary-color;
+                span {
+                    color: $secondary-color;
+                }
+                svg {
+                    path {
+                        fill: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}

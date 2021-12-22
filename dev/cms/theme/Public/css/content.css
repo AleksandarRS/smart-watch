@@ -1,0 +1,17 @@
+body:not(.home) section#content {
+  padding-top: 120px;
+}
+
+#content h1.title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#content h2 {
+    margin: 30px 0 15px 0;
+    color: #394557;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
